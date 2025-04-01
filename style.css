@@ -1,0 +1,111 @@
+/* 隐藏助手容器样式 */
+.hide-helper-container {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 内容区域 */
+.hide-helper-section {
+    padding: 10px;
+}
+
+/* 第一行 - 使用说明按钮 */
+.hide-helper-help-row {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+
+/* 第二行 - 输入行样式 */
+.hide-helper-input-row {
+    display: flex;
+    margin: 10px 0;
+    gap: 8px;
+}
+
+/* 第三行 - 当前设置显示 */
+.hide-helper-current {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* 输入框样式 */
+#hide-last-n {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* 按钮样式 */
+.hide-helper-btn {
+    padding: 8px 14px;
+    border-radius: 4px;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.hide-helper-btn:hover {
+    background-color: #333333;
+}
+
+/* 使用说明弹出容器 */
+.hide-helper-instructions {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    max-height: 80vh;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    overflow-y: auto;
+    display: none;
+}
+
+/* 滚动条样式 */
+.hide-helper-instructions::-webkit-scrollbar {
+    width: 8px;
+}
+
+.hide-helper-instructions::-webkit-scrollbar-track {
+    background: #333;
+}
+
+.hide-helper-instructions::-webkit-scrollbar-thumb {
+    background: #8a2be2; /* 紫色滑动光标 */
+    border-radius: 4px;
+}
+
+/* 关闭按钮 */
+.hide-helper-close-btn {
+    display: block;
+    margin: 15px auto 0;
+    padding: 8px 20px;
+    background-color: #444444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hide-helper-close-btn:hover {
+    background-color: #555555;
+}
+
+/* 隐藏的消息样式增强 */
+.mes[is_visible="false"] {
+    opacity: 0.5; /* 使隐藏消息稍微更易于区分 */
+}
